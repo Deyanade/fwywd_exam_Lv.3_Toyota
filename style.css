@@ -1,15 +1,10 @@
 @charset "UTF-8";
 
-<<<<<<< HEAD
 /* 全体に適用 */
 
 body {
   max-width: 1920px;
   margin: 0 auto;
-=======
-body {
- feature/#4
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
   font-family: "Noto Sans JP";
   font-size: 16px;
   color: #384359;
@@ -17,9 +12,13 @@ body {
 
 a {
   text-decoration: none;
-<<<<<<< HEAD
   color: #384359;
   font-weight: bold;
+}
+
+h6 {
+  font-size: 23px;
+  color: #007979;
 }
 
 /* css で class 化して html に適用 */
@@ -32,8 +31,16 @@ a {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .align-center {
   align-items: center;
+}
+
+.position-absolute {
+  position: absolute;
 }
 
 .px-20 {
@@ -43,79 +50,38 @@ a {
 /* 個別に適用 */
 
 .header__container {
-  height: 77px;
-=======
-}
-
-.main__container {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.header__container {
-  display: flex;
   width: 1920px;
-  height: 77px;
-  align-items: center;
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
 }
 
 .header__logo {
+  margin-left: 361px;
   width: 128px;
   height: 45.44px;
-<<<<<<< HEAD
-  margin-left: 330px;
 }
 
 .header__items {
+  margin-left: 180px;
   width: 600px;
   font-size: 15px;
-  margin-left: 180px;
   list-style: none;
 }
 
 .header__items-li {
-=======
-  margin-left: 361px;
-}
-
-.header__items {
-  display: flex;
-  margin-left: 198px;
-  justify-content: center;
-}
-
-.header__items-li {
-  padding: 0px 20px;
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
-  border-right: solid 1px #e4e4e4;
+  border-right: solid 1px;
 }
 
 .header__items-li:last-child {
-<<<<<<< HEAD
-=======
-  padding: 0px 20px;
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
   border-right: none;
 }
 
 .header__btn {
-<<<<<<< HEAD
-=======
-  display: flex;
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
   background: #007979;
   color: #ffffff;
   width: 244px;
   height: 75px;
-  font-weight: 600;
+  font-weight: bold;
   gap: 0px 10px;
   margin-left: 31px;
-<<<<<<< HEAD
-=======
-  align-items: center;
-  justify-content: center;
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
 }
 
 .header__btn:hover {
@@ -123,31 +89,64 @@ a {
   transition: 0.5s;
 }
 
-<<<<<<< HEAD
-=======
- reature/#6
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
 .header__btn img {
   height: 18px;
   width: 18px;
 }
 
-<<<<<<< HEAD
-.hero01__img01 {
-  width: 1046px;
-  height: 601px;
+.hero01__container {
+  position: relative;
+  width: 1920px;
 }
 
-.hero01__img02 {
-  width: 874px;
-  height: 601px;
+.hero01__logo {
+  left: 444px;
+  top: 107px;
+}
+
+.hero01__title-hr {
+  width: 773px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  left: 138px;
+  top: 270px;
+}
+
+.hero01__title {
+  left: 143.24px;
+  top: 238px;
+}
+
+.hero01__txt01 {
+  left: 199px;
+  top: 312px;
+  width: 648px;
+  color: #007979;
+}
+
+.hero01__txt02 {
+  left: 394px;
+  top: 405px;
+  color: #007979;
+  font-weight: bold;
+}
+
+.hero01__btn {
+  left: 380px;
+  top: 432px;
+  width: 284px;
+  height: 66px;
+  gap: 0px 15px;
+  font-size: 20px;
+  color: #ffffff;
+  background: linear-gradient(to right, #2ea1aa, #06bc7a);
+  border-radius: 4px;
+  filter: drop-shadow(4px 4px 20px #ffffff);
 }
 
 /* 横幅 375px 以下に適用 */
 
-@media (max-width: 375px) {
-  .header__container {
-=======
 @media (max-width: 375px) {
   .main__container {
     width: 375px;
@@ -155,17 +154,14 @@ a {
   }
 
   .header__container {
-    display: flex;
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
     width: 375px;
     height: 67px;
-    align-items: center;
   }
 
   .header__logo {
+    margin-left: 14px;
     width: 128px;
     height: 45.44px;
-    margin-left: 14px;
   }
 
   .header__items {
@@ -173,25 +169,17 @@ a {
   }
 
   .header__btn {
-<<<<<<< HEAD
     font-size: 11px;
     width: 170px;
     height: 65px;
     gap: 0px 5px;
     margin-left: 61px;
-=======
-    display: flex;
-    background: #007979;
-    color: #ffffff;
     font-size: 11px;
     width: 170px;
     height: 65px;
     font-weight: 600;
     gap: 0px 5px;
     margin-left: 61px;
-    align-items: center;
-    justify-content: center;
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
   }
 
   .header__btn:hover {
@@ -204,363 +192,3 @@ a {
     width: 13px;
   }
 }
-<<<<<<< HEAD
-=======
-
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 32px;
-}
-
-h6 {
-    font-size: 23px;
-}
-
-a {
-    text-decoration: none;
-    color: #384359;
-}
-
-ul {
-    overflow: hidden;
-    list-style: none;
-    margin: 0 auto;
-}
-
-.wrapper {
-    margin: 0 auto;
-}
-
-.header {
-    width: 1920px;
-    height: 77px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo img {
-    height: 45px;
-    margin-left: 360px;
-    vertical-align: bottom;
-}
-
-.header_nav {
-    width: 700px;
-    justify-content: center;
-    margin-left: 100px;
-}
-
-.header_nav a {
-    font-size: 16px;
-    text-align: center;
-}
-
-.header_nav ul li {
-    width: 100px;
-    display: inline-block;
-    align-items: center;
-}
-
-.header_nav ul li a {
-    display: block;
-}
-
-li + li {
-    border-left: 1px solid #b7b7bf;
-  }
-
-.header_btn {
-    height: 100%;
-    width: 244px;
-    background-color: #007979;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 359px;
-}
-
-.header_btn img {
-    height: 18px;
-    width: 18px;
-}
-
-.header_btn a {
-    color: #ffffff;
-    padding-left: 15px;
-}
-
-.hero01 {
-    display: flex;
-}
-
-.hero01_img1 {
-    width: 1046px;
-}
-
-.hero01_logo {
-    width: 169px;
-    height: 79px;
-    position: absolute;
-    top: 185px;
-    left: 444px;
-}
-
-.hero01_title {
-    width: 749px;
-    height: 52px;
-    position: absolute;
-    top: 316px;
-    left: 143px;
-}
-
-.hero01 hr {
-    position: absolute;
-    width: 773px;
-    height: 26px;
-    background-color: #ffffff;
-    border: none;
-    top: 340px;
-    left: 136px;
-}
-
-.hero01_txt01 {
-    position: absolute;
-    display: flex;
-    width: 650px;
-    height: 35px;    
-    align-items: center;
-    justify-content: space-between;
-    top: 400px;
-    left: 200px;
-    color: #007979;
-}
-
-.hero01_txt img {
-    width: 18px;
-    height: 18px;
-}
-
-.hero01_txt02 {
-    display: block;
-    width: 271px;
-    position: absolute;
-    font-size: 16px;
-    top: 473px;
-    left: 395px;
-    color: #007979;
-}
-
-.hero01_btn {    
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 284px;
-    height: 66px;
-    font-size: 20px;
-    top: 510px;
-    left: 382px;
-    background: linear-gradient(to right, #2EA1AA, #06BC7A);
-    border-radius: 4px;
-    filter: drop-shadow(4px 4px 20px #ffffff);
-}
-
-.hero01_btn img {
-    width: 18px;
-    height: 18px;
-}
-
-.hero01_btn a {
-    color: #ffffff;
-    padding-left: 15px;
-}
-
-.hero01_img2 {
-    width: 874px;
-}
-
-.sympathy {
-    width: 1920px;
-    height: 675px;
-}
-
-.sympathy_area01 {
-    margin-top: 100px;
-    width: 1559px;
-    height: 485px;
-    background-color: #F1F7F8;
-    display: flex;
-}
-
-.sympathy img {
-    margin-top: 67px;
-    margin-left: 960px;
-}
-
-.sympathy_area01_text {
-    display: block;
-    width: 543px;
-    height: 48px;
-}
-
-.span1 {
-    font-size: 32px;
-}
-
-.span2 {
-    font-size: 16px;
-}
-
-
-
-@media (max-width: 375px) {
-
-    h6 {
-        font-size: 12px;
-    }
-
-    .header {
-        width: 375px;
-        height: 65px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .logo img {
-        height: 45px;
-        margin-left: 14px;
-        vertical-align: bottom;
-    }
-
-    .header_nav {
-        display: none;
-    }
-
-    .header_btn {
-        height: 100%;
-        width: 170px;
-        background-color: #007979;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 2px;
-    }
-
-    .header_btn img {
-        height: 13px;
-        width: 13px;
-    }
-    
-    .header_btn a {
-        color: #ffffff;
-        font-size: 11px;
-        padding-left: 11px;
-    }
-
-    .hero01 {
-        width: 375px;
-        flex-direction: column;
-    }
-    
-    .hero01_txt01 h1 {
-        font-size: 12px;
-    }
-
-    .hero01_img1 {
-        width: 375px;
-    }
-
-    .hero01_logo {
-        width: 71px;
-        height: 35.05px;
-        position: absolute;
-        top: 112px;
-        left: 152.36px;
-    }
-
-    .hero01_title {
-        width: 332.35px;
-        height: 23.07px;
-        position: absolute;
-        top: 170px;
-        left: 16.32px;
-    }
-
-    .hero01 hr {
-        position: absolute;
-        width: 343px;
-        height: 11.54px;
-        top: 175px;
-        left: 14px;
-        background-color: #ffffff;
-        border: none;
-    }
-
-    .hero01_txt01 {
-        position: absolute;
-        display: flex;
-        width: 305px;
-        height: 23.07px;    
-        align-items: center;
-        justify-content: space-between;
-        top: 200px;
-        left: 30px;
-        color: #007979;
-    }
-
-    .hero01_txt01 img {
-        width: 8px;
-        height: 8px;
-    }
-
-    .hero01_txt02 {
-        position: absolute;
-        font-size: 10px;
-        top: 285px;
-        left: 103px;
-        color: #007979;
-    }
-
-    .hero01_btn {    
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 189.33px;
-        height: 44px;
-        font-size: 13.51px;
-        top: 310px;
-        left: 90px;
-        background: linear-gradient(to right, #2EA1AA, #06BC7A);
-        border-radius: 2.7px;
-        filter: drop-shadow(2.7px 2.7px 13.51px #ffffff);
-    }
-    
-    .hero01_btn img {
-        width: 12.2px;
-        height: 12.2px;
-    }
-    
-    .hero01_btn a {
-        color: #ffffff;
-        padding-left: 15px;
-    }
-
-    .hero01_img2 {
-        position: absolute;
-        width: 375px;
-        top: 370px;
-    }
-
-}
- main
- main
->>>>>>> 30b607ac01217bb029f4dea8254f673c25586d2a
