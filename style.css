@@ -95,11 +95,24 @@ h6 {
 }
 
 .hero01__container {
+  display: flex;
   position: relative;
   width: 1920px;
 }
 
+.hero01__img01 {
+  width: 1046px;
+  height: 601px;
+}
+
+.hero01__img02 {
+  width: 874px;
+  height: 601px;
+}
+
 .hero01__logo {
+  width: 160px;
+  height: 79px;
   left: 444px;
   top: 107px;
 }
@@ -114,6 +127,8 @@ h6 {
 }
 
 .hero01__title {
+  width: 749px;
+  height: 52px;
   left: 143.24px;
   top: 238px;
 }
@@ -148,14 +163,21 @@ h6 {
 /* 横幅 375px 以下に適用 */
 
 @media (max-width: 375px) {
-  .main__container {
-    width: 375px;
+  body {
+    max-width: 375px;
     margin: 0 auto;
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    color: #384359;
+  }
+
+  h6 {
+    font-size: 12px;
+    color: #007979;
   }
 
   .header__container {
     width: 375px;
-    height: 67px;
   }
 
   .header__logo {
@@ -172,14 +194,10 @@ h6 {
     font-size: 11px;
     width: 170px;
     height: 65px;
-    gap: 0px 5px;
+    gap: 0px 10px;
     margin-left: 61px;
     font-size: 11px;
-    width: 170px;
-    height: 65px;
-    font-weight: 600;
-    gap: 0px 5px;
-    margin-left: 61px;
+    font-weight: bold;
   }
 
   .header__btn:hover {
@@ -190,5 +208,84 @@ h6 {
   .header__btn img {
     height: 13px;
     width: 13px;
+  }
+
+  .hero01__container {
+    position: relative;
+    width: 375px;
+  }
+
+  .hero01__img01 {
+    width: 375px;
+    height: 214px;
+  }
+
+  .hero01__img02 {
+    position: absolute;
+    left: 0;
+    top: 305px;
+    width: 374.92px;
+    height: 256px;
+  }
+
+  .hero01__logo {
+    width: 71px;
+    height: 35.05px;
+    left: 152.36px;
+    top: 44.64px;
+  }
+
+  .hero01__title-hr {
+    width: 343px;
+    height: 11.54px;
+    background-color: #ffffff;
+    border: none;
+    left: 16.36px;
+    top: 116.84px;
+  }
+
+  .hero01__title {
+    width: 332.35px;
+    height: 23.07px;
+    left: 18.68px;
+    top: 102.64px;
+  }
+
+  .hero01__txt01 {
+    left: 32.36px;
+    top: 132.64px;
+    width: 310.28px;
+    color: #007979;
+  }
+
+  .hero01__txt01 img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .hero01__txt02 {
+    left: 104px;
+    top: 230px;
+    color: #007979;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .hero01__btn {
+    left: 90px;
+    top: 248px;
+    width: 189.33px;
+    height: 44px;
+    gap: 0px 10px;
+    font-size: 13.5px;
+    color: #ffffff;
+    background: linear-gradient(to right, #2ea1aa, #06bc7a);
+    border-radius: 2.7px;
+    filter: drop-shadow(2.7px 2.7px 13.51px #ffffff);
+  }
+
+  .hero01__btn img {
+    width: 13px;
+    height: 13px;
   }
 }
