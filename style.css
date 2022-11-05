@@ -60,6 +60,10 @@ h6 {
   position: absolute;
 }
 
+.margin-0_auto {
+  margin: 0 auto;
+}
+
 .px-20 {
   padding: 0 20px;
 }
@@ -180,6 +184,7 @@ h6 {
 .sympathy__container {
   width: 1920px;
   height: 675px;
+  padding: 100px 0 0 0;
 }
 
 .sympathy {
@@ -187,7 +192,6 @@ h6 {
   width: 1559px;
   height: 485px;
   background-color: #f1f7f8;
-  margin: 100px 0 0 0;
   color: #007979;
   font-weight: bold;
 }
@@ -224,6 +228,16 @@ h6 {
 
 .sympathy__img01 {
   margin: 67px 0 0 22px;
+}
+
+.solution01__container {
+  width: 1920px;
+  height: 1712px;
+}
+
+.solution01__title {
+  text-align: center;
+  margin: auto;
 }
 
 /* 横幅 375px 以下に適用 */
