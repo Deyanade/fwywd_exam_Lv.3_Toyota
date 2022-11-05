@@ -16,9 +16,26 @@ a {
   font-weight: bold;
 }
 
-h6 {
+h3 {
+  font-size: 32px;
+  color: #007979;
+}
+
+h5 {
   font-size: 23px;
   color: #007979;
+}
+
+h6 {
+  font-size: 18px;
+  color: #007979;
+}
+.ps-br {
+  display: block;
+}
+
+.sp-br {
+  display: none;
 }
 
 /* css で class 化して html に適用 */
@@ -95,11 +112,24 @@ h6 {
 }
 
 .hero01__container {
+  display: flex;
   position: relative;
   width: 1920px;
 }
 
+.hero01__img01 {
+  width: 1046px;
+  height: 601px;
+}
+
+.hero01__img02 {
+  width: 874px;
+  height: 601px;
+}
+
 .hero01__logo {
+  width: 160px;
+  height: 79px;
   left: 444px;
   top: 107px;
 }
@@ -114,6 +144,8 @@ h6 {
 }
 
 .hero01__title {
+  width: 749px;
+  height: 52px;
   left: 143.24px;
   top: 238px;
 }
@@ -145,17 +177,81 @@ h6 {
   filter: drop-shadow(4px 4px 20px #ffffff);
 }
 
+.sympathy__container {
+  width: 1920px;
+  height: 675px;
+}
+
+.sympathy {
+  display: flex;
+  width: 1559px;
+  height: 485px;
+  background-color: #f1f7f8;
+  margin: 100px 0 0 0;
+  color: #007979;
+  font-weight: bold;
+}
+
+.sympathy__title {
+  padding: 100px 0 0 380px;
+}
+
+.span1 {
+  font-size: 20px;
+}
+
+.sympathy__ruby {
+  font-size: 10px;
+  margin: 20px 0 0 465px;
+}
+
+.sympathy__txt {
+  width: 560px;
+  height: 116px;
+  font-size: 16px;
+  line-height: 28.8px;
+  margin: 0 0 0 380px;
+  color: #384359;
+}
+
+.sympathy__subtitle {
+  margin: 45px 0 0 380px;
+}
+
+.sympathy__line {
+  margin: 4px 0 0 380px;
+}
+
+.sympathy__img01 {
+  margin: 67px 0 0 22px;
+}
+
 /* 横幅 375px 以下に適用 */
 
 @media (max-width: 375px) {
-  .main__container {
-    width: 375px;
+  body {
+    max-width: 375px;
     margin: 0 auto;
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    color: #384359;
+  }
+
+  h5 {
+    font-size: 12px;
+    color: #007979;
+  }
+
+  .ps-br {
+    display: none;
+  }
+
+  .sp-br {
+    display: block;
   }
 
   .header__container {
     width: 375px;
-    height: 67px;
   }
 
   .header__logo {
@@ -172,14 +268,10 @@ h6 {
     font-size: 11px;
     width: 170px;
     height: 65px;
-    gap: 0px 5px;
+    gap: 0px 10px;
     margin-left: 61px;
     font-size: 11px;
-    width: 170px;
-    height: 65px;
-    font-weight: 600;
-    gap: 0px 5px;
-    margin-left: 61px;
+    font-weight: bold;
   }
 
   .header__btn:hover {
@@ -190,5 +282,133 @@ h6 {
   .header__btn img {
     height: 13px;
     width: 13px;
+  }
+
+  .hero01__container {
+    position: relative;
+    width: 375px;
+  }
+
+  .hero01__img01 {
+    width: 375px;
+    height: 214px;
+  }
+
+  .hero01__img02 {
+    position: absolute;
+    left: 0;
+    top: 305px;
+    width: 374.92px;
+    height: 256px;
+  }
+
+  .hero01__logo {
+    width: 71px;
+    height: 35.05px;
+    left: 152.36px;
+    top: 44.64px;
+  }
+
+  .hero01__title-hr {
+    width: 343px;
+    height: 11.54px;
+    background-color: #ffffff;
+    border: none;
+    left: 16.36px;
+    top: 116.84px;
+  }
+
+  .hero01__title {
+    width: 332.35px;
+    height: 23.07px;
+    left: 18.68px;
+    top: 102.64px;
+  }
+
+  .hero01__txt01 {
+    left: 32.36px;
+    top: 132.64px;
+    width: 310.28px;
+    color: #007979;
+  }
+
+  .hero01__txt01 img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .hero01__txt02 {
+    left: 104px;
+    top: 230px;
+    color: #007979;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .hero01__btn {
+    left: 90px;
+    top: 248px;
+    width: 189.33px;
+    height: 44px;
+    gap: 0px 10px;
+    font-size: 13.5px;
+    color: #ffffff;
+    background: linear-gradient(to right, #2ea1aa, #06bc7a);
+    border-radius: 2.7px;
+    filter: drop-shadow(2.7px 2.7px 13.51px #ffffff);
+  }
+
+  .hero01__btn img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .sympathy__container {
+    margin-top: 345px;
+    width: 375px;
+    height: 794px;
+  }
+
+  .sympathy {
+    display: block;
+    width: 375px;
+    height: 727px;
+  }
+
+  .sympathy__title {
+    padding: 64px 0 0 15px;
+    line-height: 30px;
+  }
+
+  .span1 {
+    font-size: 20px;
+  }
+
+  .sympathy__ruby {
+    margin: 52px 0 0 100px;
+  }
+
+  .sympathy__txt {
+    margin: 0 0 0 15px;
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+
+  .normal {
+    display: none;
+  }
+
+  .sympathy__subtitle {
+    font-size: 18px;
+    margin: 85px 0 0 16px;
+  }
+
+  .sympathy__line {
+    margin: 0px 0 0 16px;
+  }
+
+  .sympathy__img01 {
+    width: 327px;
+    margin: 44px 0 0 16px;
   }
 }
