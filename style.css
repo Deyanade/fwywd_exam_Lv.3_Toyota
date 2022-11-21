@@ -235,12 +235,16 @@ h6 {
   margin-left: 665px;
 }
 
-.margin-t-17 {
-  margin-top: -17px;
+.margin-t-70 {
+  margin-top: -70px;
 }
 
 .margin-t-22 {
   margin-top: -22px;
+}
+
+.margin-t-17 {
+  margin-top: -17px;
 }
 
 .margin-t8 {
@@ -531,6 +535,10 @@ h6 {
   padding-top: 820px;
 }
 
+.top--200 {
+  top: -200px;
+}
+
 .top--80 {
   top: -80px;
 }
@@ -541,6 +549,10 @@ h6 {
 
 .top-70 {
   top: 70px;
+}
+
+.top-94 {
+  top: 94px;
 }
 
 .top-100 {
@@ -583,12 +595,24 @@ h6 {
   top: 260px;
 }
 
+.top-263 {
+  top: 263px;
+}
+
 .top-333 {
   top: 333px;
 }
 
 .top-354 {
   top: 354px;
+}
+
+.top-396 {
+  top: 396px;
+}
+
+.top-412 {
+  top: 412px;
 }
 
 .top-420 {
@@ -963,9 +987,7 @@ h6 {
   background-position: center bottom;
 }
 .background-img_hero2 {
-  background-image: url(./img/hero02_2_bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url(./img/hero02_bg.png);
 }
 
 .background-img_facebook {
@@ -1849,6 +1871,10 @@ h6 {
 
   .sp_top-396 {
     top: 396px;
+  }
+
+  .sp_top-460 {
+    top: 460px;
   }
 
   .sp_top-610 {
