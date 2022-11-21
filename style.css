@@ -275,6 +275,10 @@ h6 {
   margin-top: 81px;
 }
 
+.margin-t100 {
+  margin-top: 100px;
+}
+
 .margin-t254 {
   margin-top: 254px;
 }
@@ -1353,6 +1357,10 @@ h6 {
     margin-top: 50px;
   }
 
+  .sp_margin-t60 {
+    margin-top: 60px;
+  }
+
   .sp_margin-t65 {
     margin-top: 65px;
   }
@@ -1980,7 +1988,8 @@ h6 {
   }
 
   .sp_background-img_hero02 {
-    background-image: url(./img/hero02_bg_sp2.png);
+    background-image: url(./img/hero02_bg_sp.png);
+    background-size: 100%;
   }
 
   .sp_background-img_facebook {
